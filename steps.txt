@@ -1,0 +1,42 @@
+[2] : Project Structure
+  
+  • install react project with typescript by vite 
+      -> install node.js STL
+      -> install typescript `npm i typescript -g` && `tsc --help`
+      -> create react project with vite `npm create vite@latest` && `npm i` && `npm run dev` 
+
+  • install main libraries such as react-router-dom, redux toolkit, axios and bootstrap
+      -> `npm i axios react-router-dom react-redux @reduxjs/toolkit react-bootstrap bootstrap`
+
+  • create main folders(folder structure) like components, routes, hook, asset and pages
+      -> remove src/App.css
+      -> remove src/App.tsx
+      -> remove src/index.css
+      -> Delete import App from './App.tsx' in src/main.tsx
+      -> Delete import './index.css' in src/main.tsx
+      -> Delete import { StrictMode } from 'react' in src/main.tsx
+      -> Delete <StrictMode><App /></StrictMode>, src/main.tsx
+      -> create components folder in src/
+      -> create src/components/common
+      -> create src/components/feedback
+      -> create src/components/forms
+      -> create src/components/eCommerce
+      -> create src/components/layout
+      -> create src/templates
+      -> create src/routes
+      -> create src/hooks
+      -> create src/pages
+      -> create src/store {redux}
+      -> create src/services
+      -> create src/util
+      -> create src/styles
+
+  • create your backend by JSON server (in eCommerce Back Folder)
+      -> npm init
+      -> install json server `npm i json-server`
+      -> for turn on to server 
+          - Create a db.json or db.json5 file
+          - go to package.json file and change "test": "echo \"Error: no test specified\" && exit 1"  to "start": "json-server db.json"
+
+  • load the correct data into json server
+      -> get data from (https://github.com/KimzCodes/ecommerce-typescript/blob/main/db.json)
